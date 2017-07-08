@@ -6,14 +6,9 @@ import {
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
-import Analytics from 'analytics-react-native';
-import keys from '../../config';
 import CasePanel from '../../components/CasePanel';
 import cases from '../../services/cases';
 import styles from './styles';
-
-const analytics = new Analytics(keys.SEGMENT_WRITE_KEY);
-
 
 class Home extends React.Component {
 
@@ -56,12 +51,6 @@ class Home extends React.Component {
           }
         });
     });
-
-    //analytics.identify({
-      //userId: 'DEVELOPER',
-      //traits: {
-      //}
-    //});
 
   }
 
