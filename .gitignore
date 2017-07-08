@@ -36,7 +36,10 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
-# EXCLUDE API KEYS
+# My addition: Exclude package-lock
+package-lock.json
+
+# My addition: Exclude API keys
 src-ios/config/
 
 # BUCK
