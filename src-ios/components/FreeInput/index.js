@@ -1,0 +1,44 @@
+import React from 'react';
+import {
+  TextInput,
+  View,
+} from 'react-native';
+import PropTypes from 'prop-types';
+import styles from './styles';
+
+
+const FreeInput = function FreeInput({
+  submitted,
+  response,
+  handleInput,
+  id,
+}) {
+  return (
+    <View>
+      <TextInput
+        editable={!submitted}
+        style={styles.textInput}
+        onChangeText={text => handleInput(id, text)}
+        value={response}
+      />
+    </View>
+  );
+};
+
+const propTypes = {
+  handleInput: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  response: PropTypes.string,
+  submitted: PropTypes.bool,
+};
+
+const defaultProps = {
+  submitted: false,
+  response: '',
+};
+
+FreeInput.propTypes = propTypes;
+FreeInput.defaultProps = defaultProps;
+
+export default FreeInput;
+
