@@ -18,27 +18,13 @@ const CasePanel = function CasePanel({
   thumbnail,
   caseIndex,
   lastModified,
-  locked,
-  sku,
-  unlock,
 }) {
   function handlePress() {
-    if (locked) {
-      navigation.navigate('Settings', {
-        caseIndex,
-        name,
-        pages,
-        locked,
-        unlock,
-        sku,
-      });
-    } else {
-      navigation.navigate('CaseSwiper', {
-        pages,
-        name,
-        caseIndex,
-      });
-    }
+    navigation.navigate('CaseSwiper', {
+      pages,
+      name,
+      caseIndex,
+    });
   }
 
   return (
@@ -69,9 +55,6 @@ const CasePanel = function CasePanel({
               caseIndex,
               name,
               pages,
-              locked,
-              sku,
-              unlock,
             })}
           >
             <Image
@@ -101,18 +84,14 @@ const propTypes = {
   caseIndex: PropTypes.number.isRequired,
   company: PropTypes.string.isRequired,
   lastModified: PropTypes.string,
-  locked: PropTypes.bool,
   name: PropTypes.string.isRequired,
   navigation: PropTypes.object.isRequired,
   pages: PropTypes.array.isRequired,
-  sku: PropTypes.string.isRequired,
   thumbnail: PropTypes.number.isRequired,
-  unlock: PropTypes.func.isRequired,
 };
 
 const defaultProps = {
   lastModified: '',
-  locked: false,
 };
 
 CasePanel.propTypes = propTypes;

@@ -19,15 +19,8 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      lastModified: [],
-      products: null,
-      locked: cases
-        .reduce((p, c) => (
-          Object.assign(p, { [c.sku]: c.locked })
-        ), {}),
+      lastModified: []
     };
-
-    //AsyncStorage.clear();
   }
 
   componentDidMount() {
@@ -37,44 +30,17 @@ class Home extends React.Component {
       this.setState({ lastModified });
     });
 
-    cases.forEach((e) => {
-      AsyncStorage
-        .getItem(`unlocked_${e.sku}`)
-        .then((unlocked) => {
-          if (unlocked) {
-            this.setState({
-              locked: Object.assign(
-                this.state.locked,
-                { [e.sku]: false },
-              ),
-            });
-          }
-        });
-    });
-
-  }
-
-  unlock(sku) {
-    AsyncStorage.setItem(`unlocked_${sku}`, 'true');
-    this.setState({
-      locked: Object.assign(
-        this.state.locked,
-        { [sku]: false },
-      ),
-    });
   }
 
   render() {
     const { navigation } = this.props;
-    const { lastModified, locked } = this.state;
+    const { lastModified } = this.state;
 
     return (
       <View style={styles.homeContainer}>
         <ScrollView>
           {cases.map((e, i) => <CasePanel
             {...e}
-            unlock={this.unlock.bind(this)}
-            locked={locked[e.sku]}
             key={e.name}
             caseIndex={i}
             navigation={navigation}
