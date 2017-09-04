@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AsyncStorage,
   ScrollView,
+  Image,
   Text,
   View,
 } from 'react-native';
@@ -9,17 +10,19 @@ import PropTypes from 'prop-types';
 import CasePanel from '../../components/CasePanel';
 import cases from '../../services/cases';
 import styles from './styles';
+// import caseBaseIconImgSrc from '../../assets/images/icons/dashboard/case-base-icon.png';
+import caseBaseIconImgSrc from '../../assets/images/icons/dashboard/case_base_gray.png';
 
 class Home extends React.Component {
 
   static navigationOptions = {
-    title: 'Practice Cases',
+    title: 'Dashboard',
   }
 
   constructor(props) {
     super(props);
     this.state = {
-      lastModified: []
+      lastModified: [],
     };
   }
 
@@ -29,7 +32,6 @@ class Home extends React.Component {
       const lastModified = stores.map(res => res[1]);
       this.setState({ lastModified });
     });
-
   }
 
   render() {
@@ -39,6 +41,23 @@ class Home extends React.Component {
     return (
       <View style={styles.homeContainer}>
         <ScrollView>
+          <View style={styles.heading}>
+            <View style={styles.logoAndTitle}>
+              <Image
+                style={styles.caseBaseIcon}
+                source={caseBaseIconImgSrc}
+              />
+              <Text style={styles.title}>
+                CASEBASE
+              </Text>
+            </View>
+            <Text style={[styles.subtitle, styles.subtitleLarge]}>
+              {'A repository of case studies'}
+            </Text>
+            <Text style={[styles.subtitle, styles.subtitleSmall]}>
+              {'for the 21st Century.'}
+            </Text>
+          </View>
           {cases.map((e, i) => <CasePanel
             {...e}
             key={e.name}
@@ -46,24 +65,20 @@ class Home extends React.Component {
             navigation={navigation}
             lastModified={lastModified[i]}
           />)}
-        </ScrollView>
-        <View style={styles.flexFiller} />
-        <View style={[styles.footer, styles.horizontalCenter]}>
-          <View style={[styles.contactSection, styles.horizontalCenter]}>
-            <Text style={styles.contactText}>
-              Questions? Found a bug?
-            </Text>
-            <Text style={styles.contactText}>
-              We'd love to hear from you. Contact us at:
-            </Text>
-            <Text style={styles.emailText}>
-              contact@caseinterviewprep.com
+          <View style={[styles.footer, styles.horizontalCenter]}>
+            <View style={styles.sourceGit}>
+              <Text style={styles.footerText}>
+                {'Source ❮❯ on '}
+              </Text>
+              <Text style={[styles.footerText, { fontWeight: '700' }]}>
+                GitHub
+              </Text>
+            </View>
+            <Text style={styles.footerText}>
+              OpSoConsulting/casebase-ios
             </Text>
           </View>
-          <Text style={styles.madeWithText}>
-            Made with ❤️ in NYC
-          </Text>
-        </View>
+        </ScrollView>
       </View>
     );
   }
