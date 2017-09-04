@@ -1,18 +1,13 @@
 import React from 'react';
 import {
-  ActivityIndicator,
   Alert,
-  AsyncStorage,
   Button,
-  NativeModules,
-  ProgressViewIOS,
   Text,
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styles from './styles';
-import B from '../../components/BoldText';
 import * as actions from '../../actions';
 
 const mapStateToProps = state => state;
@@ -22,10 +17,6 @@ class Settings extends React.Component {
   static navigationOptions = () => ({
     title: 'Case Settings',
   });
-
-  constructor(props) {
-    super(props);
-  }
 
   clearCases(caseIndex, pages) {
     const keys = pages.map((e, i) => `c${caseIndex}p${i}`);
@@ -91,4 +82,3 @@ export default connect(
   mapStateToProps,
   actions,
 )(Settings);
-
