@@ -22,6 +22,9 @@ const CasePage = function CasePage({
   submitResponse,
   submittedById,
   toggleModal,
+  responseCount,
+  lastPrompted,
+  registerPrompt,
 }) {
   const id = `c${caseIndex}p${pageIndex}`;
   const response = responseById[id];
@@ -31,6 +34,9 @@ const CasePage = function CasePage({
     toggleModal,
     id,
     visible: modalById[id],
+    lastPrompted,
+    registerPrompt,
+    responseCount,
   };
 
   const inputProps = Object.assign(
@@ -90,6 +96,9 @@ const propTypes = {
   submitResponse: PropTypes.func.isRequired,
   submittedById: PropTypes.shape().isRequired,
   toggleModal: PropTypes.func.isRequired,
+  responseCount: PropTypes.number.isRequired,
+  lastPrompted: PropTypes.string.isRequired,
+  registerPrompt: PropTypes.func.isRequired,
 };
 
 const defaultProps = {
@@ -100,4 +109,3 @@ CasePage.propTypes = propTypes;
 CasePage.defaultProps = defaultProps;
 
 export default CasePage;
-

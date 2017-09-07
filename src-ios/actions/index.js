@@ -39,3 +39,9 @@ export const toggleModal = id => (
   }
 );
 
+export const registerPrompt = value => (
+  {
+    type: types.REGISTER_PROMPT,
+    value,
+  }
+);
