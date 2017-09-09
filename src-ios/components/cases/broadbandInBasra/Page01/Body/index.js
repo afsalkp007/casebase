@@ -46,8 +46,8 @@ const Body = function Body() {
       <BodyText>
           AAT’s area of operation will be Basra city proper (population 400,000) and the surrounding neighborhoods (home to an additional 300,000). However, only a fraction of the area’s population can afford broadband access. Currently, the state-owned enterprise provides service to 156,000 contract customers. Industry reports suggest that is around 78% of the total market in the Basra metropolitan area.
         </BodyText>
-      <BlockQuote>
-          Swipe to move to the next page.
+      <BlockQuote color="blue">
+          👆 Swipe to move to the next page.
         </BlockQuote>
     </View>
   );
@@ -55,4 +55,3 @@ const Body = function Body() {
 
 export default Body;
 /* eslint-enable max-len */
-
