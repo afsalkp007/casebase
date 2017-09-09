@@ -5,6 +5,7 @@ import {
   SET_SUBMITTED,
   TYPE_INPUT,
   TOGGLE_MODAL,
+  REGISTER_PROMPT,
 } from '../constants/ActionTypes';
 
 const initialState = {
@@ -12,6 +13,9 @@ const initialState = {
   responseById: {},
   submittedById: {},
   modalById: {},
+  toggleModalCount: 0,
+  lastPrompted: String(new Date()),
+  responseCount: 0,
 };
 
 const inputIds = (state = initialState.inputIds, action) => {
@@ -96,6 +100,28 @@ const submittedById = (state = initialState.submittedById, action) => {
   }
 };
 
+const getLastPrompted = (state = initialState.lastPrompted, action) => {
+  const { value } = action;
+  switch (action.type) {
+    case REGISTER_PROMPT:
+      AsyncStorage.setItem('LastPrompted', value);
+      return value;
+    default:
+      return state;
+  }
+};
+
+const responseCount = (state = initialState.responseCount, action) => {
+  switch (action.type) {
+    case SUBMIT_RESPONSE:
+      return state + 1;
+    case SET_SUBMITTED:
+      return state + Number(action.bool);
+    default:
+      return state;
+  }
+};
+
 const caseBaseApp = (state = initialState, action) => {
   switch (action.type) {
     case SUBMIT_RESPONSE:
@@ -105,6 +131,8 @@ const caseBaseApp = (state = initialState, action) => {
         responseById: responseById(state.responseById, action),
         submittedById: submittedById(state.submittedById, action),
         modalById: modalById(state.modalById, action),
+        lastPrompted: getLastPrompted(state.lastPrompted, action),
+        responseCount: responseCount(state.responseCount, action),
       };
 
     case CLEAR_RESPONSES:
@@ -114,6 +142,8 @@ const caseBaseApp = (state = initialState, action) => {
         responseById: responseById(state.responseById, action),
         submittedById: submittedById(state.submittedById, action),
         modalById: modalById(state.modalById, action),
+        lastPrompted: getLastPrompted(state.lastPrompted, action),
+        responseCount: responseCount(state.responseCount, action),
       };
 
     default:
@@ -122,6 +152,8 @@ const caseBaseApp = (state = initialState, action) => {
         responseById: responseById(state.responseById, action),
         submittedById: submittedById(state.submittedById, action),
         modalById: modalById(state.modalById, action),
+        lastPrompted: getLastPrompted(state.lastPrompted, action),
+        responseCount: responseCount(state.responseCount, action),
       };
   }
 };

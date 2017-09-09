@@ -10,7 +10,6 @@ import PropTypes from 'prop-types';
 import CasePanel from '../../components/CasePanel';
 import cases from '../../services/cases';
 import styles from './styles';
-// import caseBaseIconImgSrc from '../../assets/images/icons/dashboard/case-base-icon.png';
 import caseBaseIconImgSrc from '../../assets/images/icons/dashboard/case_base_gray.png';
 
 class Home extends React.Component {
@@ -32,6 +31,8 @@ class Home extends React.Component {
       const lastModified = stores.map(res => res[1]);
       this.setState({ lastModified });
     });
+    /* DANGER MAKE SURE THIS IS COMMENTED OUT FOR DEPLOY */
+    // AsyncStorage.clear();
   }
 
   render() {

@@ -3,3 +3,4 @@ export const CLEAR_RESPONSES = 'CLEAR_RESPONSES';
 export const SET_SUBMITTED = 'SET_SUBMITTED';
 export const TYPE_INPUT = 'TYPE_INPUT';
 export const TOGGLE_MODAL = 'TOGGLE_MODAL';
+export const REGISTER_PROMPT = 'REGISTER_PROMPT';
