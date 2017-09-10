@@ -5,8 +5,8 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
+import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 // w:1080 h:1080
 import imgSrc from '../../../../../assets/images/case-graphics/laraguayAssistance/page-6/one.png';
 
@@ -24,9 +24,7 @@ const Body = function Body() {
       <BodyText>
         Referencing the graph below, what would the new share of spending on caregivers be under the proposed change?
       </BodyText>
-      <BlockQuote>
-        Report your answer in percentage points to the nearest tenth.
-      </BlockQuote>
+      <PercentageSubsequent />
       <ImageFrame
         source={imgSrc}
         style={{

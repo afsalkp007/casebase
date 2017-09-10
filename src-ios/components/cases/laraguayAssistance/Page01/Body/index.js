@@ -4,8 +4,8 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
 import Header from '../../../../Header';
+import SwipeToMove from '../../../../block-quotes/SwipeToMove';
 
 const Body = function Body() {
   return (
@@ -31,13 +31,10 @@ const Body = function Body() {
       <BodyText>
         Work through the following prompts to form your recommendations.
       </BodyText>
-      <BlockQuote>
-        Swipe to move to the next page.
-      </BlockQuote>
+      <SwipeToMove />
     </View>
   );
 };
 
 export default Body;
 /* eslint-enable max-len */
-

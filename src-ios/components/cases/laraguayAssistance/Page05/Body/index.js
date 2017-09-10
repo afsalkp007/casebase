@@ -4,7 +4,7 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
+import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 
 const Body = function Body() {
   return (
@@ -18,9 +18,7 @@ const Body = function Body() {
       <BodyText>
         What percentage of program funding goes towards caregiver salaries in Laraguay?
       </BodyText>
-      <BlockQuote>
-        Report you answer in percentage points to the nearest tenth.
-      </BlockQuote>
+      <PercentageSubsequent />
     </View>
   );
 };

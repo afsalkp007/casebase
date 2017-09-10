@@ -7,7 +7,7 @@ import {
 import BodyText from '../../../../BodyText';
 import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
-import I from '../../../../ItalicText';
+import PercentageInitial from '../../../../block-quotes/PercentageInitial';
 // w:1080 h:1260
 import imgSrc from '../../../../../assets/images/case-graphics/laraguayAssistance/page-3/one.png';
 
@@ -37,9 +37,7 @@ const Body = function Body() {
       <BodyText>
         The committee member would like to know what share of Laraguay’s currently existing centers would have to close to bring average center size (in terms of youth per center) in line with Regional Peer C.
       </BodyText>
-      <BlockQuote>
-        Report your answer in <I>percentage points</I>. For example, 20% would be entered as 20.
-      </BlockQuote>
+      <PercentageInitial />
       <BlockQuote>
         0.5% of Laraguay’s population are currently enrolled at the centers. Assume that closings have no effect on the overall number of enrollees in the program.
       </BlockQuote>

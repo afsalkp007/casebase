@@ -21,7 +21,10 @@ const styles = {
     backgroundColor: '#e3e9ff',
   },
 
-
+  green: {
+    borderColor: '#a2ff8e',
+    backgroundColor: '#e9ffe3',
+  },
 
   grayText: {
     color: '#d6d7da',

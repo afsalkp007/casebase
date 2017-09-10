@@ -7,12 +7,13 @@ import styles from './styles';
 import BodyText from '../BodyText';
 
 const BlockQuote = function BlockQuote({ children, color }) {
-
   return (
-    <View style={[
-      styles.blockQuote,
-      styles[color || 'yellow'],
-    ]}>
+    <View
+      style={[
+        styles.blockQuote,
+        styles[color || 'yellow'],
+      ]}
+    >
       <BodyText style={styles.grayText}>
         {children}
       </BodyText>
@@ -22,8 +23,14 @@ const BlockQuote = function BlockQuote({ children, color }) {
 
 const propTypes = {
   children: PropTypes.node.isRequired,
+  color: PropTypes.string,
+};
+
+const defaultProps = {
+  color: 'yellow',
 };
 
 BlockQuote.propTypes = propTypes;
+BlockQuote.defaultProps = defaultProps;
 
 export default BlockQuote;

@@ -4,8 +4,7 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
-import I from '../../../../ItalicText';
+import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 
 const Body = function Body() {
   return (
@@ -22,9 +21,7 @@ const Body = function Body() {
       <BodyText>
         By your estimate, what will be the average annual growth rate in premium subscriptions?
       </BodyText>
-      <BlockQuote>
-        Report your answer in <I>percentage points</I>.
-      </BlockQuote>
+      <PercentageSubsequent />
     </View>
   );
 };
