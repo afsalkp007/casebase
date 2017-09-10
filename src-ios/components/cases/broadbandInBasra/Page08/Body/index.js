@@ -5,10 +5,9 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
-import B from '../../../../BoldText';
-import I from '../../../../ItalicText';
+import PinchToZoom from '../../../../block-quotes/PinchToZoom';
+import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 import imgSrc from '../../../../../assets/images/case-graphics/broadbandInBasra/page-8/one.png';
 
 const win = Dimensions.get('window');
@@ -28,6 +27,7 @@ const Body = function Body() {
       <BodyText>
         Your team puts together the table below to outline the two-tier proposal:
       </BodyText>
+      <PinchToZoom />
       <ImageFrame
         source={imgSrc}
         style={{
@@ -38,9 +38,7 @@ const Body = function Body() {
       <BodyText>
         Roughly what percentage of customers will have to adopt the premium service for AAT to meet its first year profit target - paying all accrued interest and 4% of the principal?
       </BodyText>
-      <BlockQuote>
-        Report your answer in <I>percentage points</I>. For example, 20% would be entered as 20 (<B>not</B> 0.20).
-      </BlockQuote>
+      <PercentageSubsequent />
     </View>
   );
 };

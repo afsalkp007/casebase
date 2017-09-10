@@ -7,6 +7,7 @@ import BodyText from '../../../../BodyText';
 import BlockQuote from '../../../../BlockQuote';
 import I from '../../../../ItalicText';
 import Fraction from '../../../../Fraction';
+import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 
 const Body = function Body() {
   return (
@@ -20,9 +21,7 @@ const Body = function Body() {
       <BlockQuote>
         Assume that the demand curve estimated by your team remains accurate in the next year. Together Crestgate, Dental-B, and Brawn accounted for <Fraction>8/11</Fraction> of the market this year.
       </BlockQuote>
-      <BlockQuote>
-        Report your answer in percentage points, a rough response is fine.
-      </BlockQuote>
+      <PercentageSubsequent />
     </View>
   );
 };

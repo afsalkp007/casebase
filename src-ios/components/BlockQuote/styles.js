@@ -5,12 +5,25 @@ const styles = {
   blockQuote: {
     marginTop: 20,
     borderLeftWidth: 4,
-    borderColor: '#ffeb8e',
-    backgroundColor: '#fff9e3',
     paddingLeft: 15,
     paddingTop: 5,
     paddingBottom: 5,
     paddingRight: 5,
+  },
+
+  yellow: {
+    borderColor: '#ffeb8e',
+    backgroundColor: '#fff9e3',
+  },
+
+  blue: {
+    borderColor: '#8ea2ff',
+    backgroundColor: '#e3e9ff',
+  },
+
+  green: {
+    borderColor: '#a2ff8e',
+    backgroundColor: '#e9ffe3',
   },
 
   grayText: {
@@ -20,4 +33,3 @@ const styles = {
 };
 
 export default StyleSheet.create(styles);
-

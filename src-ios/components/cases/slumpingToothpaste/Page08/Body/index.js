@@ -5,9 +5,8 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
-import B from '../../../../BoldText';
+import FreeResponseSubsequent from '../../../../block-quotes/FreeResponseSubsequent';
 // 1080w 600h
 import imgOneSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-8/one.png';
 import imgTwoSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-8/two.png';
@@ -37,9 +36,7 @@ const Body = function Body() {
       <BodyText>
         Do these charts suggest any way for the electric toothbrush division to boost revenue?
       </BodyText>
-      <BlockQuote>
-        This is a <B>free response</B> question.
-      </BlockQuote>
+      <FreeResponseSubsequent />
     </View>
   );
 };

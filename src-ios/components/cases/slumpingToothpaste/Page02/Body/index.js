@@ -5,10 +5,9 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
-import B from '../../../../BoldText';
-import I from '../../../../ItalicText';
+import PinchToZoom from '../../../../block-quotes/PinchToZoom';
+import FreeResponseInitial from '../../../../block-quotes/FreeResponseInitial';
 import imgOneSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-2/one.png';
 import imgTwoSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-2/two.png';
 
@@ -20,9 +19,7 @@ const Body = function Body() {
       <BodyText>
         Your team compiles the graphic below detailing the trajectory of Crestgate sales at supermarkets and discount stores in recent years.
       </BodyText>
-      <BlockQuote>
-        Case graphics - including the one below - support <I>pinch-to-zoom</I>. Adjust and scroll the image as needed to interpret the graphic.
-      </BlockQuote>
+      <PinchToZoom />
       <ImageFrame
         source={imgOneSrc}
         style={{
@@ -40,9 +37,7 @@ const Body = function Body() {
       <BodyText>
         Looking at these charts, what possible explanations do you see for Crestgate’s stagnating sales?
       </BodyText>
-      <BlockQuote>
-        This is a <B>free response</B> question.
-      </BlockQuote>
+      <FreeResponseInitial />
     </View>
   );
 };

@@ -4,8 +4,7 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import BlockQuote from '../../../../BlockQuote';
-import B from '../../../../BoldText';
+import FreeResponseSubsequent from '../../../../block-quotes/FreeResponseSubsequent';
 
 const Body = function Body() {
   return (
@@ -16,9 +15,7 @@ const Body = function Body() {
       <BodyText>
         Can you propose a strategy that would distribute the boost to net profit margins across a greater number of years?
       </BodyText>
-      <BlockQuote>
-        This is a <B>free response</B> question.
-      </BlockQuote>
+      <FreeResponseSubsequent />
     </View>
   );
 };
