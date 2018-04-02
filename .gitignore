@@ -40,7 +40,7 @@ yarn-error.log
 package-lock.json
 
 # My addition: Exclude API keys
-src-ios/config/
+src/config/
 
 # BUCK
 buck-out/
