@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "lint": "esw -w src-ios/",
+    "lint": "esw -w src/",
     "test": "jest"
   },
   "dependencies": {
@@ -39,7 +39,7 @@
   },
   "rnpm": {
     "assets": [
-      "./src-ios/assets/fonts"
+      "./src/assets/fonts"
     ]
   },
   "jest": {

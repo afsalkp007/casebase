@@ -7,7 +7,7 @@ import React from 'react';
 import {
   AppRegistry,
 } from 'react-native';
-import Main from './src-ios/Main';
+import Main from './src/Main';
 
 console.ignoredYellowBox = ['Warning: BackAndroid', 'Remote debugger', 'Warning: Each']
 
