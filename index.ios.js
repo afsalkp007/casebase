@@ -9,15 +9,13 @@ import {
 } from 'react-native';
 import Main from './src/Main';
 
+// eslint-disable-next-line
 console.ignoredYellowBox = ['Warning: BackAndroid', 'Remote debugger', 'Warning: Each']
 
-class CaseBase extends React.Component {
-  render(){
-    return(
-      <Main />
-    );
-  }
+function CaseBase() {
+  return (
+    <Main />
+  );
 }
 
 AppRegistry.registerComponent('CaseBase', () => CaseBase);
-

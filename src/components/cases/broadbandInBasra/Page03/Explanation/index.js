@@ -11,7 +11,6 @@ import I from '../../../../ItalicText';
 const Explanation = function Explanation() {
   return (
     <View>
-
       <Subheader>
         78% contribution margin ratio
       </Subheader>

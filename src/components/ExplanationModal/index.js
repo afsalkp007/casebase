@@ -34,6 +34,7 @@ const ExplanationModal = function ExplanationModal({
   return (
     <Modal
       visible={visible}
+      onRequestClose={() => null}
     >
       <View style={styles.body}>
         <ScrollView>
