@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import PhotoView from 'react-native-photo-viewer';
 import styles from './styles';
 
-const ImageFrame = function ImageFrame({ source, style }) {
+function ImageFrame({ source, style }) {
   return (
     <View
       style={styles.imageContainer}
@@ -22,7 +22,7 @@ const ImageFrame = function ImageFrame({ source, style }) {
       />
     </View>
   );
-};
+}
 
 const propTypes = {
   source: PropTypes.number.isRequired,
