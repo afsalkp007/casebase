@@ -16,7 +16,7 @@ const Fraction = function Fraction({ children }) {
   };
 
   return (
-    <View
+    <Text
       style={[styles.fraction, widthStyle]}
     >
       <Text
@@ -30,7 +30,7 @@ const Fraction = function Fraction({ children }) {
       >
         {denominator}
       </Text>
-    </View>
+    </Text>
   );
 };
 

@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-  Button,
-  View,
-} from 'react-native';
 import PropTypes from 'prop-types';
-import styles from './styles';
+import ButtonCB from '../ButtonCB';
 
 const SubmitButton = function SubmitButton({
   submitResponse,
@@ -22,15 +18,12 @@ const SubmitButton = function SubmitButton({
   };
 
   return (
-    <View
-      style={styles.button}
+    <ButtonCB
+      onPress={() => handlePress(id)}
+      disabled={!enabled}
     >
-      <Button
-        onPress={() => handlePress(id)}
-        disabled={!enabled}
-        title={title}
-      />
-    </View>
+      {title}
+    </ButtonCB>
   );
 };
 

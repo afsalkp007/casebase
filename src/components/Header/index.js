@@ -19,7 +19,7 @@ const Header = function Header({ children }) {
 };
 
 const propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.string.isRequired,
 };
 
 Header.propTypes = propTypes;

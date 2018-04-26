@@ -20,7 +20,7 @@ const MathText = function MathText({ children }) {
 };
 
 const propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.string.isRequired,
 };
 
 MathText.propTypes = propTypes;

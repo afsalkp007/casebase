@@ -24,6 +24,13 @@ const styles = {
     marginTop: 20,
     marginBottom: 20,
     padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 50,
+  },
+
+  buttonText: {
+    color: '#2196F3',
   },
 
 };
