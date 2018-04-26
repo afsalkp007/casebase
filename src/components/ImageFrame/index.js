@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   View,
+  Image,
 } from 'react-native';
 import PropTypes from 'prop-types';
 // for details: https://github.com/lrettig/react-native-stripe/issues/24
 // eslint-disable-next-line import/no-unresolved, import/extensions
-import PhotoView from 'react-native-photo-viewer';
 import styles from './styles';
 
 function ImageFrame({ source, style }) {
@@ -13,9 +13,7 @@ function ImageFrame({ source, style }) {
     <View
       style={styles.imageContainer}
     >
-      <PhotoView
-        minimumZoomScale={0.5}
-        maximumZoomScale={3}
+      <Image
         style={style}
         source={source}
         resizeMode="contain"

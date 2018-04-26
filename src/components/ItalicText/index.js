@@ -13,7 +13,7 @@ const BoldText = function BoldText({ children }) {
 };
 
 const propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.string.isRequired,
 };
 
 BoldText.propTypes = propTypes;

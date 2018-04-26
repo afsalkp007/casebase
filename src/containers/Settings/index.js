@@ -1,8 +1,8 @@
 import React from 'react';
 import {
   Alert,
-  Button,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
@@ -62,12 +62,14 @@ class Settings extends React.Component {
             {name}
           </Text>
         </View>
-        <View style={styles.buttonWrapper}>
-          <Button
-            onPress={() => this.handleClearPress(caseIndex, pages)}
-            title="Clear Responses"
-          />
-        </View>
+        <TouchableOpacity
+          style={styles.buttonWrapper}
+          onPress={() => this.handleClearPress(caseIndex, pages)}
+        >
+          <Text style={styles.buttonText}>
+            Clear Responses
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   }
