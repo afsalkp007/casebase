@@ -2,13 +2,17 @@ import React from 'react';
 import {
   KeyboardAvoidingView,
   ScrollView,
+  Image,
   View,
+  TouchableOpacity,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 import ExplanationModal from '../ExplanationModal';
 import SubmitButton from '../SubmitButton';
 import InputRow from '../InputRow';
+import nextIcon from '../../assets/images/icons/cases/ic_navigate_next/ic_navigate_next.png';
+import beforeIcon from '../../assets/images/icons/cases/ic_navigate_before/ic_navigate_before.png';
 
 const CasePage = function CasePage({
   answer,
@@ -25,6 +29,7 @@ const CasePage = function CasePage({
   responseCount,
   lastPrompted,
   registerPrompt,
+  incrementPageIndex,
 }) {
   const id = `c${caseIndex}p${pageIndex}`;
   const response = responseById[id];
@@ -74,12 +79,38 @@ const CasePage = function CasePage({
           <Body />
         </View>
       </ScrollView>
-      {(answer.type) ? (
-        <View>
-          <InputRow {...inputProps} />
-          <SubmitButton {...buttonProps} />
+      <View>
+        {
+          (answer.type) && (
+            <InputRow {...inputProps} />
+          )
+        }
+        <View style={{ display: 'flex', flexDirection: 'row', maxHeight: 60 }}>
+          {
+            (answer.type) && (
+              <SubmitButton {...buttonProps} />
+            )
+          }
+          <TouchableOpacity
+            onPress={() => incrementPageIndex(-1)}
+            style={styles.navigationButton}
+          >
+            <Image
+              source={beforeIcon}
+              style={styles.navigationButtonIcon}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => incrementPageIndex(1)}
+            style={styles.navigationButton}
+          >
+            <Image
+              source={nextIcon}
+              style={styles.navigationButtonIcon}
+            />
+          </TouchableOpacity>
         </View>
-      ) : <View />}
+      </View>
     </KeyboardAvoidingView>
   );
 };
@@ -99,6 +130,7 @@ const propTypes = {
   responseCount: PropTypes.number.isRequired,
   lastPrompted: PropTypes.string.isRequired,
   registerPrompt: PropTypes.func.isRequired,
+  incrementPageIndex: PropTypes.func.isRequired,
 };
 
 const defaultProps = {

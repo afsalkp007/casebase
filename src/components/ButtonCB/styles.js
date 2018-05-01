@@ -4,9 +4,9 @@ const styles = {
 
   button: {
     backgroundColor: '#2196F3',
-    height: 50,
     justifyContent: 'center',
     alignItems: 'center',
+    flex: 1,
   },
 
   buttonText: {

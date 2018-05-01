@@ -21,6 +21,10 @@ const styles = {
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: '#d6d7da',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 60,
   },
 
 };

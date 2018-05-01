@@ -2,11 +2,12 @@ import React from 'react';
 import {
   Modal,
   ScrollView,
+  Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import * as StoreReview from 'react-native-store-review';
-import ButtonCB from '../ButtonCB';
 import styles from './styles';
 
 const ExplanationModal = function ExplanationModal({
@@ -43,9 +44,12 @@ const ExplanationModal = function ExplanationModal({
           </View>
         </ScrollView>
       </View>
-      <ButtonCB onPress={handlePress}>
-          Close Answer
-      </ButtonCB>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={handlePress}
+      >
+        <Text>Close Answer</Text>
+      </TouchableOpacity>
     </Modal>
   );
 };
