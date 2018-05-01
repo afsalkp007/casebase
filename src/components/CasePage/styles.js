@@ -8,7 +8,6 @@ const styles = {
 
   casePageContainer: {
     flex: 1,
-    paddingBottom: 66,
   },
 
   bodyContainer: {
@@ -18,6 +17,20 @@ const styles = {
     paddingBottom: 120,
   },
 
+  navigationButton: {
+    flex: 0.5,
+    flexDirection: 'column',
+    height: 60,
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  navigationButtonIcon: {
+    width: 24,
+    height: 24,
+  },
 
 };
 

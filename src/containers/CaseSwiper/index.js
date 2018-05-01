@@ -1,20 +1,25 @@
 import React from 'react';
 import {
-  ActivityIndicator,
   AsyncStorage,
   View,
 } from 'react-native';
-import Swiper from 'react-native-swiper';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './styles';
 import * as actions from '../../actions';
 
-class CaseSwiper extends React.Component {
+class CaseSet extends React.Component {
 
   static navigationOptions = ({ navigation }) => ({
     title: `${navigation.state.params.name}`,
   });
+
+  constructor(props) {
+    super(props);
+
+    this.state = { pageIndex: 0 };
+    this.incrementPageIndex = this.incrementPageIndex.bind(this);
+  }
 
   componentDidMount() {
     const { pages, caseIndex } = this.props.navigation.state.params;
@@ -39,33 +44,33 @@ class CaseSwiper extends React.Component {
     });
   }
 
+  incrementPageIndex(count) {
+    const { pageIndex } = this.state;
+    const { pages } = this.props.navigation.state.params;
+    this.setState({
+      pageIndex: (((pageIndex + count) % pages.length) + pages.length) % pages.length,
+    });
+  }
+
   render() {
     const { pages, caseIndex } = this.props.navigation.state.params;
     const { registerPrompt, lastPrompted, responseCount } = this.props;
+    const { pageIndex } = this.state;
 
+    const CurrentPage = pages[pageIndex];
     return (
-      <View
-        style={styles.outer}
-      >
-        <Swiper
-          style={styles.wrapper}
-          loadMinimal
-          loadMinimalSize={1}
-          loadMinimalLoader={<ActivityIndicator />}
-        >
-          {pages.map((Page, index) => (
-            <View style={styles.container} key={`page-${Page.name}`}>
-              <Page
-                {...this.props}
-                caseIndex={caseIndex}
-                pageIndex={index}
-                responseCount={responseCount}
-                lastPrompted={lastPrompted}
-                registerPrompt={registerPrompt}
-              />
-            </View>
-          ))}
-        </Swiper>
+      <View style={styles.outer}>
+        <View style={styles.container}>
+          <CurrentPage
+            {...this.props}
+            caseIndex={caseIndex}
+            pageIndex={pageIndex}
+            responseCount={responseCount}
+            lastPrompted={lastPrompted}
+            registerPrompt={registerPrompt}
+            incrementPageIndex={this.incrementPageIndex}
+          />
+        </View>
       </View>
     );
   }
@@ -87,7 +92,7 @@ const propTypes = {
   responseCount: PropTypes.number.isRequired,
 };
 
-CaseSwiper.propTypes = propTypes;
+CaseSet.propTypes = propTypes;
 
 const mapStateToProps = state => ({
   handleInput: state.handleInput,
@@ -105,4 +110,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   actions,
-)(CaseSwiper);
+)(CaseSet);
