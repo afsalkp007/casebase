@@ -23,7 +23,7 @@ const CasePanel = function CasePanel({
   lastModified,
 }) {
   function handlePress() {
-    navigation.navigate('CaseSwiper', {
+    navigation.navigate('CaseSet', {
       pages,
       name,
       caseIndex,
