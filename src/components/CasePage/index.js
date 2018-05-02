@@ -1,10 +1,11 @@
 import React from 'react';
 import {
-  KeyboardAvoidingView,
-  ScrollView,
   Image,
-  View,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
   TouchableOpacity,
+  View,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
@@ -63,11 +64,18 @@ const CasePage = function CasePage({
     id,
   };
 
+  const keyboardAvoidingViewProps = {
+    style: styles.casePage,
+    contentContainerStyle: styles.casePageContainer,
+  };
+
+  if (Platform.OS === 'ios') {
+    keyboardAvoidingViewProps.behavior = 'position';
+  }
+
   return (
     <KeyboardAvoidingView
-      behavior="position"
-      style={styles.casePage}
-      contentContainerStyle={styles.casePageContainer}
+      {...keyboardAvoidingViewProps}
     >
       {(answer.type) ? (
         <ExplanationModal {...modalProps}>
@@ -85,7 +93,7 @@ const CasePage = function CasePage({
             <InputRow {...inputProps} />
           )
         }
-        <View style={{ display: 'flex', flexDirection: 'row', maxHeight: 60 }}>
+        <View style={{ display: 'flex', flexDirection: 'row', height: 65 }}>
           {
             (answer.type) && (
               <SubmitButton {...buttonProps} />

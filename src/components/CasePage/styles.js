@@ -20,7 +20,6 @@ const styles = {
   navigationButton: {
     flex: 0.5,
     flexDirection: 'column',
-    height: 60,
     borderWidth: 0.5,
     borderColor: '#d6d7da',
     alignItems: 'center',
