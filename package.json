@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "clear": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "lint": "esw -w src/",
     "test": "jest"
   },
@@ -11,8 +12,8 @@
     "babel-eslint": "^7.2.3",
     "dateformat": "^2.0.0",
     "prop-types": "^15.5.10",
-    "react": "16.0.0-alpha.12",
-    "react-native": "0.46.1",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
     "react-native-modal-dropdown": "^0.6.2",
     "react-native-navigation": "^1.1.134",
     "react-native-selectme": "^1.2.3",

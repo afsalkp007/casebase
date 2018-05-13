@@ -24,13 +24,11 @@ export const setSubmitted = (id, bool) => (
   }
 );
 
-export const handleInput = (id, value) => {
-  return {
-    type: types.TYPE_INPUT,
-    id,
-    value,
-  };
-};
+export const handleInput = (id, value) => ({
+  type: types.TYPE_INPUT,
+  id,
+  value,
+});
 
 export const toggleModal = id => (
   {
