@@ -10,7 +10,12 @@ import {
 import Main from './src/Main';
 
 // eslint-disable-next-line
-console.ignoredYellowBox = ['Warning: BackAndroid', 'Remote debugger', 'Warning: Each']
+console.ignoredYellowBox = [
+  'Warning: BackAndroid', 
+  'Remote debugger', 
+  'Warning: Each',
+  'Warning: isMounted(...) is deprecated',
+]
 
 function CaseBase() {
   return (

@@ -36,12 +36,6 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
-# My addition: Exclude package-lock
-package-lock.json
-
-# My addition: Exclude API keys
-src/config/
-
 # BUCK
 buck-out/
 \.buckd/
