@@ -23,6 +23,7 @@ const PickerInput = function PickerInput({
       <Picker
         enabled={!submitted}
         style={styles.pickerInput}
+        itemStyle={styles.pickerInputItem}
         onValueChange={handleValueChange}
         selectedValue={response}
       >

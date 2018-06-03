@@ -5,7 +5,6 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import Header from '../../../../Header';
-import SwipeToMove from '../../../../block-quotes/SwipeToMove';
 
 const Body = function Body() {
   return (
@@ -31,7 +30,6 @@ const Body = function Body() {
       <BodyText>
         Work through the following prompts to form your recommendations.
       </BodyText>
-      <SwipeToMove />
     </View>
   );
 };

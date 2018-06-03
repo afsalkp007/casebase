@@ -6,7 +6,6 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import ImageFrame from '../../../../ImageFrame';
-import PinchToZoom from '../../../../block-quotes/PinchToZoom';
 import FreeResponseInitial from '../../../../block-quotes/FreeResponseInitial';
 import imgOneSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-2/one.png';
 import imgTwoSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-2/two.png';
@@ -19,7 +18,6 @@ const Body = function Body() {
       <BodyText>
         Your team compiles the graphic below detailing the trajectory of Crestgate sales at supermarkets and discount stores in recent years.
       </BodyText>
-      <PinchToZoom />
       <ImageFrame
         source={imgOneSrc}
         style={{

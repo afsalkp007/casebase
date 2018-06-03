@@ -89,11 +89,13 @@ const CasePage = function CasePage({
       </ScrollView>
       <View>
         {
-          (answer.type) && (
+          (answer.type) ? (
             <InputRow {...inputProps} />
+          ) : (
+            <View style={styles.bottomBorder} />
           )
         }
-        <View style={{ display: 'flex', flexDirection: 'row', height: 65 }}>
+        <View style={styles.buttonRow}>
           {
             (answer.type) && (
               <SubmitButton {...buttonProps} />

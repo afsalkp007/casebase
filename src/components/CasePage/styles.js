@@ -17,6 +17,18 @@ const styles = {
     paddingBottom: 120,
   },
 
+  bottomBorder: {
+    borderTopWidth: 1,
+    borderBottomWidth: 0,
+    borderColor: '#d6d7da',
+  },
+
+  buttonRow: {
+    display: 'flex', 
+    flexDirection: 'row', 
+    height: 65,
+  },
+
   navigationButton: {
     flex: 0.5,
     flexDirection: 'column',

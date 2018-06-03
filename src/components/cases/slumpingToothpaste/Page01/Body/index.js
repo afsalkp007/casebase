@@ -5,7 +5,6 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import Header from '../../../../Header';
-import SwipeToMove from '../../../../block-quotes/SwipeToMove';
 
 const Body = function Body() {
   return (
@@ -28,7 +27,6 @@ const Body = function Body() {
       <BodyText>
           Note that Crestgate works with outlets – both supermarkets and discount stores – to coordinate pricing and discounts.
       </BodyText>
-      <SwipeToMove />
     </View>
   );
 };

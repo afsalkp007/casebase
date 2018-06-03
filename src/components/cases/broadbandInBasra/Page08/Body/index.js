@@ -6,7 +6,6 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import ImageFrame from '../../../../ImageFrame';
-import PinchToZoom from '../../../../block-quotes/PinchToZoom';
 import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 import imgSrc from '../../../../../assets/images/case-graphics/broadbandInBasra/page-8/one.png';
 
@@ -27,7 +26,6 @@ const Body = function Body() {
       <BodyText>
         Your team puts together the table below to outline the two-tier proposal:
       </BodyText>
-      <PinchToZoom />
       <ImageFrame
         source={imgSrc}
         style={{
