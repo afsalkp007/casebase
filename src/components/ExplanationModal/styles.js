@@ -27,6 +27,12 @@ const styles = {
     height: 60,
   },
 
+  buttonText: {
+    fontSize: 14,
+    fontWeight: "700",
+    letterSpacing: 0.75,
+  }
+
 };
 
 export default StyleSheet.create(styles);

@@ -4,14 +4,14 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         The revenue maximizing price is $2.25
-      </Subheader>
+      </Header>
       <BodyText>
         Note that at $2.5 and $2.0 the revenue generated is equal: $1 billion. That means the revenue maximizing price lies halfway between, at $2.25 per unit. For those familiar with economics, this is the point of unit elasticity, where a change in price results in a change in demand of equal proportion.
       </BodyText>

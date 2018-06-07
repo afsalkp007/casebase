@@ -1,11 +1,17 @@
 import { StyleSheet } from 'react-native';
+import colors from '../../theme/colors';
+import fonts from '../../theme/fonts';
 
 const styles = {
 
+  // based on:
+  // https://material.io/design/typography/the-type-system.html#type-scale
   header: {
-    fontSize: 28,
-    fontWeight: '600',
+    fontFamily: fonts.serifBold,
+    fontSize: 34,
+    letterSpacing: 0.25,
     marginBottom: 8,
+    color: colors.primaryText,
   },
 
 };

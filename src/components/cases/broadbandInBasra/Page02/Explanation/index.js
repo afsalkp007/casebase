@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         $27 million on the center and servers
-      </Subheader>
+      </Header>
       <BodyText>
         The cost of the server center is given to us: $20.5 million.
       </BodyText>

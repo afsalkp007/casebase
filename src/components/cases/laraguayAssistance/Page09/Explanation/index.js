@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         $19,760 per employee
-      </Subheader>
+      </Header>
       <BodyText>
         Begin by calculating annual salary ex-benefits. For the average employee, a $1,600 monthly salary over 12 months amounts to $19,200 in annual income:
       </BodyText>

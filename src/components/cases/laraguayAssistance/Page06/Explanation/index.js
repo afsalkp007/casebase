@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import I from '../../../../ItalicText';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Caregiver salaries rise to 30% of total spending
-      </Subheader>
+      </Header>
       <BodyText>
         The key here is to realize that the 20% cut to upkeep costs perfectly balances out the $5,000 raise for caregivers. As a result, <I>total</I> program spending is unchanged. We only have to worry about the numerator, and not the denominator.
       </BodyText>

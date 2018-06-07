@@ -4,15 +4,15 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import I from '../../../../ItalicText';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         AAT should rent out its modems
-      </Subheader>
+      </Header>
       <BodyText>
         Selling the modems to customers provides a substantial boost to annual profits, but that boost is concentrated in the first year.
       </BodyText>

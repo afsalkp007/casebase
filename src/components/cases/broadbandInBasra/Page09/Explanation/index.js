@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import ImageFrame from '../../../../ImageFrame';
 import B from '../../../../BoldText';
 import imgSrc from '../../../../../assets/images/case-graphics/broadbandInBasra/page-9/one.png';
@@ -14,9 +14,9 @@ import imgSrc from '../../../../../assets/images/case-graphics/broadbandInBasra/
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         7% compound annual growth
-      </Subheader>
+      </Header>
       <BodyText>
         With the percentage change in total subscriptions and in standard subscriptions we can calculate the percentage change in premium subscriptions over the 10 year period.
       </BodyText>

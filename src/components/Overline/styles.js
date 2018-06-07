@@ -4,13 +4,16 @@ import fonts from '../../theme/fonts';
 
 const styles = {
 
-  bodyText: {
-    fontSize: 16,
-    fontFamily: fonts.serifRegular,
-    marginTop: 5,
-    marginBottom: 5,
+  // based on:
+  // https://material.io/design/typography/the-type-system.html#applying-the-type-scale
+  overline: {
+    fontFamily: fonts.sansSerifBold,
+    fontSize: 11,
+    letterSpacing: 0,
+    marginBottom: 8,
     color: colors.primaryText,
   },
+
 };
 
 export default StyleSheet.create(styles);

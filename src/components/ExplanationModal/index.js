@@ -48,7 +48,7 @@ const ExplanationModal = function ExplanationModal({
         style={styles.button}
         onPress={handlePress}
       >
-        <Text>Close Answer</Text>
+        <Text style={styles.buttonText}>CLOSE ANSWER</Text>
       </TouchableOpacity>
     </Modal>
   );

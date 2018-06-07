@@ -5,10 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import Header from '../../../../Header';
+import Overline from '../../../../Overline';
 
 const Body = function Body() {
   return (
     <View>
+      <Overline>
+        BCG ≫ SAMPLE CASE ONE
+      </Overline>
       <Header>
           Slumping Toothpaste Sales
       </Header>

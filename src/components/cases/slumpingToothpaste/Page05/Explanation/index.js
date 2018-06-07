@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import I from '../../../../ItalicText';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Leave prices unchanged
-      </Subheader>
+      </Header>
       <BodyText>
         This is a question of <I>elasticity of demand</I>. Reference an economics textbook if you are unfamiliar with the concept. In contemplating a price hike, you must determine whether the revenue gained from higher prices outweighs the revenue lost from lower volume.
       </BodyText>

@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         No, net profit falls short
-      </Subheader>
+      </Header>
       <BodyText>
         With a $140 contribution margin and 25,000 customers forecast for the first year, gross profit comes to $3.5 million:
       </BodyText>

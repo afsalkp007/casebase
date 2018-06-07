@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         $85 million increase in spending
-      </Subheader>
+      </Header>
       <BodyText>
         To answer this we need to calculate spending on both private and public centers. We’ll start with the new private centers.
       </BodyText>

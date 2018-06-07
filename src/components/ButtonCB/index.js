@@ -18,7 +18,7 @@ const ButtonCB = function ButtonCB({
       disabled={disabled}
     >
       <Text style={styles.buttonText}>
-        {children}
+        {children.toUpperCase()}
       </Text>
     </TouchableOpacity>
   );

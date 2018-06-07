@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Caretaker salaries are 25% of total funding
-      </Subheader>
+      </Header>
       <BodyText>
         Oftentimes, there are easy and hard ways to get an answer. For this problem, you can explicitly calculate the amount spent on caregiver salaries and overall total program spending and derive the share from that.
       </BodyText>

@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import BlockQuote from '../../../../BlockQuote';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import B from '../../../../BoldText';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         No correlation between scores and youth per center
-      </Subheader>
+      </Header>
       <BodyText>
         While the number of youth per center appears correlated with higher assessment scores  among regional peers, that is a meagre sample and may be leading us to an inaccurate conclusion.
       </BodyText>

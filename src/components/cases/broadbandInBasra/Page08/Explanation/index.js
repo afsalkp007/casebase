@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         10% must adopt the premium service
-      </Subheader>
+      </Header>
       <BodyText>
         AAT is $250,000 short of the profit target. To determine the number of premium customers needed to meet this target, first calculate the marginal increase in profit from switching a single customer from standard to premium.
       </BodyText>

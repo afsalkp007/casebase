@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Adds around $650,000 to profits
-      </Subheader>
+      </Header>
       <BodyText>
         If AAT charged modems at cost, the expense and revenue would cancel out. Since modems had acted as a $575,000 drag on profit, this move would increase profits by the same amount.
       </BodyText>

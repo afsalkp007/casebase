@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import Fraction from '../../../../Fraction';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Crestgate held 33% share by volume
-      </Subheader>
+      </Header>
       <BodyText>
         If Crestgate sold 110 million units at Dizcount Mart in 2011, and that amounted to a <Fraction>2/5</Fraction> or 40% share, then unit sales for all brands totaled:
       </BodyText>

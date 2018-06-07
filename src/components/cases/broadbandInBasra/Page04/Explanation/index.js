@@ -4,14 +4,14 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Not necessarily
-      </Subheader>
+      </Header>
       <BodyText>
         Certainly, these contribution margins are large. But that’s to be expected in the broadband industry, where the major expenses are fixed startup costs, and the marginal cost of adding another customer is small.
       </BodyText>

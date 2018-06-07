@@ -4,15 +4,15 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import I from '../../../../ItalicText';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Pro: more competition Con: less accountability
-      </Subheader>
+      </Header>
       <BodyText>
         The introduction of private centers will foster benefits through competition, but could potentially weaken the quality of programs and even increase total costs.
       </BodyText>

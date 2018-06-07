@@ -4,14 +4,14 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Review quality and quantity of care
-      </Subheader>
+      </Header>
       <BodyText>
         Disability assistance in Laraguay could be assessed across two dimensions: quantity and quality. It would be important to try and develop metrics to measure both.
       </BodyText>

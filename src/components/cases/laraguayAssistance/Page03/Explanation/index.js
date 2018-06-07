@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         37.5% of centers would have to close
-      </Subheader>
+      </Header>
       <BodyText>
         You can solve this problem algebraically or plug in the values given in the prompt and work to a solution. We’ll go over the algebraic solution below.
       </BodyText>

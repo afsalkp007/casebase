@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import I from '../../../../ItalicText';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Set price above $20
-      </Subheader>
+      </Header>
       <BodyText>
         The first step in solving this problem is setting up a formula for profit as a function of quantity and price.
       </BodyText>

@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import Fraction from '../../../../Fraction';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Revenue per unit fell 12.5%
-      </Subheader>
+      </Header>
       <BodyText>
         For 2011, there was $440 million in sales with 110 million units sold. That comes out to $4 of revenue per unit:
       </BodyText>

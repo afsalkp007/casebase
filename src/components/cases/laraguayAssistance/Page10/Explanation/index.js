@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import Fraction from '../../../../Fraction';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         No, switching will not generate 20% savings
-      </Subheader>
+      </Header>
       <BodyText>
         Earlier we calculated that the public employees earn an average annual salary $19,200. Salaries for private contractors are <Fraction>7/8</Fraction> of that, or $16,800.
       </BodyText>

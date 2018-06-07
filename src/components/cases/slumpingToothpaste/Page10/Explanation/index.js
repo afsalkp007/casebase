@@ -5,15 +5,15 @@ import {
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import MathText from '../../../../MathText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import Fraction from '../../../../Fraction';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Crestgate&apos;s share will be 23%
-      </Subheader>
+      </Header>
       <BodyText>
         First we estimate the total size of the electric toothbrush market. We know Crestgate sold 500,000 units, Dental-B sold 1.2 million units, and Brawn sold 1.5 million units. Together that&apos;s:
       </BodyText>

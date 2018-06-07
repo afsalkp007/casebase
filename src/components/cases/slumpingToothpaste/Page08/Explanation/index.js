@@ -4,14 +4,14 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Lower toothbrush prices, raise head prices
-      </Subheader>
+      </Header>
       <BodyText>
         Of the three competitors, Crestgate charges by far the highest price for its electric toothbrush model. While this helps generate revenue from toothbrush sales (Crestgate’s revenue here is equal to or just below that of its two rivals), it results in far fewer toothbrushes being sold.
       </BodyText>

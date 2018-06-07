@@ -12,6 +12,8 @@ const styles = {
   buttonText: {
     color: 'white',
     fontWeight: '700',
+    fontSize: 14,
+    letterSpacing: 0.75,
   },
 
 };

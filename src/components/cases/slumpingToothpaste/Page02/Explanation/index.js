@@ -4,15 +4,15 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Subheader from '../../../../Subheader';
+import Header from '../../../../Header';
 import I from '../../../../ItalicText';
 
 const Explanation = function Explanation() {
   return (
     <View>
-      <Subheader>
+      <Header>
         Discount store prices drive revenue down
-      </Subheader>
+      </Header>
       <BodyText>
         In volume terms, it looks likes sales have risen slightly in recent years. That trend has been driven by sharp increases in the volume sold at discount stores, particularly Dizcount Mart.
       </BodyText>
