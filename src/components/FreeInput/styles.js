@@ -7,6 +7,7 @@ const styles = {
     paddingRight: 10,
     borderWidth: 0,
     fontSize: 20,
+    minHeight: 40,
   },
 
 };

@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import CasePanel from '../../components/CasePanel';
 import cases from '../../services/cases';
 import styles from './styles';
-import caseBaseIconImgSrc from '../../assets/images/icons/dashboard/case_base_gray.png';
+import caseBaseIconImgSrc from '../../assets/images/icons/launcher/notebook_gray.png';
 
 class Home extends React.Component {
 
@@ -49,7 +49,7 @@ class Home extends React.Component {
                 source={caseBaseIconImgSrc}
               />
               <Text style={styles.title}>
-                CASEBASE
+                casebase
               </Text>
             </View>
             <Text style={[styles.subtitle, styles.subtitleLarge]}>

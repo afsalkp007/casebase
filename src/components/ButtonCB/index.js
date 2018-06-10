@@ -10,14 +10,15 @@ const ButtonCB = function ButtonCB({
   onPress,
   disabled = false,
   children,
+  white = false,
 }) {
   return (
     <TouchableOpacity
-      style={styles.button}
+      style={[styles.button, white ? styles.whiteButton : {} ]}
       onPress={onPress}
       disabled={disabled}
     >
-      <Text style={styles.buttonText}>
+      <Text style={[styles.buttonText, white ? styles.darkText : {}]}>
         {children.toUpperCase()}
       </Text>
     </TouchableOpacity>

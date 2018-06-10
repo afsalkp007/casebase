@@ -1,4 +1,6 @@
 import { StyleSheet } from 'react-native';
+import fonts from '../../theme/fonts';
+import colors from '../../theme/colors';
 
 const styles = {
 
@@ -17,24 +19,28 @@ const styles = {
 
   logoAndTitle: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
 
   caseBaseIcon: {
-    height: 40,
-    width: 40,
-    margin: 5,
+    height: 50,
+    width: 50,
   },
 
   title: {
-    fontSize: 30,
+    fontSize: 34,
+    letterSpacing: 0.25,
     lineHeight: 50,
     fontWeight: '200',
-    color: 'rgba(0,0,0,0.54)',
+    color: colors.secondaryText,
+    fontFamily: fonts.sansSerifRegular,
+    marginBottom: 10,
+    padding: 0,
   },
 
   subtitle: {
     fontWeight: '300',
-    color: 'rgba(0,0,0,0.54)',
+    color: colors.secondaryText,
     textAlign: 'center',
   },
 
@@ -54,7 +60,7 @@ const styles = {
 
   footer: {
     paddingTop: 30,
-    paddingBottom: 20,
+    paddingBottom: 30,
     alignItems: 'center',
   },
 
@@ -63,7 +69,7 @@ const styles = {
   },
 
   footerText: {
-    color: 'rgba(0,0,0,0.54)',
+    color: colors.secondaryText,
     textAlign: 'center',
   },
 

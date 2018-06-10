@@ -2,6 +2,7 @@
 import React from 'react';
 import Dimensions from 'Dimensions';
 import {
+  Image,
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
@@ -9,7 +10,7 @@ import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
 import PercentageInitial from '../../../../block-quotes/PercentageInitial';
 // w:1080 h:1260
-import imgSrc from '../../../../../assets/images/case-graphics/laraguayAssistance/page-3/one.png';
+import imgSrc from '../assets/tableOne/index.png';
 
 const win = Dimensions.get('window');
 
@@ -24,9 +25,7 @@ const Body = function Body() {
       </BodyText>
       <ImageFrame
         source={imgSrc}
-        style={{
-          height: 9 * (win.width / 10),
-        }}
+        aspectRatio={1080/1260}
       />
       <BodyText>
         One of the committee members asks your team to look into the example of Regional Peer C, which outperforms all regional and economic peers on the UN assessment.

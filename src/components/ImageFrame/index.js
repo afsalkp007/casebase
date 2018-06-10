@@ -8,13 +8,13 @@ import PropTypes from 'prop-types';
 // eslint-disable-next-line import/no-unresolved, import/extensions
 import styles from './styles';
 
-function ImageFrame({ source, style }) {
+function ImageFrame({ source, aspectRatio }) {
   return (
     <View
       style={styles.imageContainer}
     >
       <Image
-        style={style}
+        style={[ styles.image, { aspectRatio } ]}
         source={source}
         resizeMode="contain"
       />
@@ -24,7 +24,7 @@ function ImageFrame({ source, style }) {
 
 const propTypes = {
   source: PropTypes.number.isRequired,
-  style: PropTypes.shape(),
+  aspectRatio: PropTypes.number,
 };
 
 const defaultProps = {

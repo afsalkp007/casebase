@@ -8,7 +8,7 @@ import BodyText from '../../../../BodyText';
 import ImageFrame from '../../../../ImageFrame';
 import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 // w:1080 h:1080
-import imgSrc from '../../../../../assets/images/case-graphics/laraguayAssistance/page-6/one.png';
+import imgSrc from '../assets/figureOne/index.png';
 
 const win = Dimensions.get('window');
 
@@ -27,9 +27,7 @@ const Body = function Body() {
       <PercentageSubsequent />
       <ImageFrame
         source={imgSrc}
-        style={{
-          height: 9 * (win.width / 10),
-        }}
+        aspectRatio={1080/1080}
       />
     </View>
   );

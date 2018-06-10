@@ -7,6 +7,7 @@ import {
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import ButtonCB from '../ButtonCB';
 import * as StoreReview from 'react-native-store-review';
 import styles from './styles';
 
@@ -44,12 +45,14 @@ const ExplanationModal = function ExplanationModal({
           </View>
         </ScrollView>
       </View>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={handlePress}
-      >
-        <Text style={styles.buttonText}>CLOSE ANSWER</Text>
-      </TouchableOpacity>
+      <View style={styles.buttonContainer}>
+        <ButtonCB
+          white={true}
+          onPress={handlePress}
+        >
+          Close Answer
+        </ButtonCB>
+      </View>
     </Modal>
   );
 };

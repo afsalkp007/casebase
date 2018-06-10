@@ -9,7 +9,7 @@ import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
 import Fraction from '../../../../Fraction';
 // w:1080 h:1080
-import imgSrc from '../../../../../assets/images/case-graphics/laraguayAssistance/page-9/one.png';
+import imgSrc from '../assets/figureOne/index.png';
 
 const win = Dimensions.get('window');
 
