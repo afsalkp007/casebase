@@ -5,7 +5,6 @@ const styles = {
   inputRow: {
     backgroundColor: 'white',
     borderTopWidth: 1,
-    borderBottomWidth: 1,
     borderColor: '#d6d7da',
   },
 

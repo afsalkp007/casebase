@@ -1,15 +1,12 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Dimensions from 'Dimensions';
 import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import ImageFrame from '../../../../ImageFrame';
 // 1080w 1200h
-import imgSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-5/one.png';
-
-const win = Dimensions.get('window');
+import figureOneSrc from '../assets/figureOne/index.png';
 
 const Body = function Body() {
   return (
@@ -24,11 +21,8 @@ const Body = function Body() {
         You have your team estimate the demand curve for the company&apos;s toothpaste at Dizcount Mart. Their work is below.
       </BodyText>
       <ImageFrame
-        source={imgSrc}
-        style={{
-          height: 9 * (win.width / 9),
-          flex: 1,
-        }}
+        source={figureOneSrc}
+        aspectRatio={1080 / 1200}
       />
       <BodyText>
         If your objective is to maximize revenue, do you support the executives&apos; recommendation or the sales representatives&apos; opposition?

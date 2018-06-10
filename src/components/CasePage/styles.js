@@ -24,15 +24,18 @@ const styles = {
   },
 
   buttonRow: {
-    display: 'flex', 
-    flexDirection: 'row', 
+    display: 'flex',
+    flexDirection: 'row',
+    borderTopWidth: 1,
+    borderColor: '#d6d7da',
     height: 65,
   },
 
   navigationButton: {
     flex: 0.5,
     flexDirection: 'column',
-    borderWidth: 0.5,
+    borderLeftWidth: 0.5,
+    borderRightWidth: 0.5,
     borderColor: '#d6d7da',
     alignItems: 'center',
     justifyContent: 'center',

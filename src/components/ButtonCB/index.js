@@ -14,11 +14,21 @@ const ButtonCB = function ButtonCB({
 }) {
   return (
     <TouchableOpacity
-      style={[styles.button, white ? styles.whiteButton : {} ]}
+      style={[
+        styles.button,
+        white ? styles.whiteButton : {},
+        disabled ? styles.disabledButton : {},
+      ]}
       onPress={onPress}
       disabled={disabled}
     >
-      <Text style={[styles.buttonText, white ? styles.darkText : {}]}>
+      <Text
+        style={[
+          styles.buttonText,
+          white ? styles.darkText : {},
+          disabled ? styles.disabledText : {},
+        ]}
+      >
         {children.toUpperCase()}
       </Text>
     </TouchableOpacity>
@@ -29,10 +39,12 @@ const propTypes = {
   onPress: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
   children: PropTypes.string.isRequired,
+  white: PropTypes.bool,
 };
 
 const defaultProps = {
   disabled: false,
+  white: false,
 };
 
 ButtonCB.propTypes = propTypes;

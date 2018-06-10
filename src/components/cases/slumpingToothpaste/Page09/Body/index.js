@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Dimensions from 'Dimensions';
 import {
   View,
 } from 'react-native';
@@ -9,9 +8,7 @@ import BlockQuote from '../../../../BlockQuote';
 import ImageFrame from '../../../../ImageFrame';
 import I from '../../../../ItalicText';
 // 1080w 1200h
-import imgSrc from '../../../../../assets/images/case-graphics/slumpingToothpaste/page-9/one.png';
-
-const win = Dimensions.get('window');
+import imgSrc from '../assets/figureOne/index.png';
 
 const Body = function Body() {
   return (
@@ -21,10 +18,7 @@ const Body = function Body() {
       </BodyText>
       <ImageFrame
         source={imgSrc}
-        style={{
-          height: win.width,
-          flex: 1,
-        }}
+        aspectRatio={1080 / 1200}
       />
       <BodyText>
         Assume that the company raises the price of its replacement heads to $15. As a rule of thumb, assume that sales of replacement heads in a given year are equal to four times the number of toothbrushes sold in that year.

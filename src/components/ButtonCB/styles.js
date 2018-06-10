@@ -10,6 +10,10 @@ const styles = {
     flex: 1,
   },
 
+  disabledButton: {
+    backgroundColor: '#DFDFDF',
+  },
+
   whiteButton: {
     backgroundColor: 'white',
   },
@@ -23,6 +27,10 @@ const styles = {
 
   darkText: {
     color: colors.primaryText,
+  },
+
+  disabledText: {
+    color: '#9F9F9F',
   },
 
 };

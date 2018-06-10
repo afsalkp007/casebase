@@ -1,15 +1,13 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Dimensions from 'Dimensions';
 import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
 import ImageFrame from '../../../../ImageFrame';
 import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
-import imgSrc from '../../../../../assets/images/case-graphics/broadbandInBasra/page-8/one.png';
-
-const win = Dimensions.get('window');
+// 1000 x 500
+import imgSrc from '../assets/tableOne/index.png';
 
 const Body = function Body() {
   return (
@@ -28,10 +26,7 @@ const Body = function Body() {
       </BodyText>
       <ImageFrame
         source={imgSrc}
-        style={{
-          height: win.width / 2,
-          flex: 1,
-        }}
+        aspectRatio={1000 / 500}
       />
       <BodyText>
         Roughly what percentage of customers will have to adopt the premium service for AAT to meet its first year profit target - paying all accrued interest and 4% of the principal?

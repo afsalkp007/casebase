@@ -17,16 +17,6 @@ const styles = {
     alignItems: 'center',
   },
 
-  logoAndTitle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-
-  caseBaseIcon: {
-    height: 50,
-    width: 50,
-  },
-
   title: {
     fontSize: 34,
     letterSpacing: 0.25,

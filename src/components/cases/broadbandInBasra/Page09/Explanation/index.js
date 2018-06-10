@@ -8,7 +8,7 @@ import MathText from '../../../../MathText';
 import Header from '../../../../Header';
 import ImageFrame from '../../../../ImageFrame';
 import B from '../../../../BoldText';
-import imgSrc from '../../../../../assets/images/case-graphics/broadbandInBasra/page-9/one.png';
+import figureOneSrc from '../assets/figureOne/index.png';
 
 
 const Explanation = function Explanation() {
@@ -55,7 +55,7 @@ const Explanation = function Explanation() {
       </BodyText>
       <ImageFrame
         style={{ height: 30 }}
-        source={imgSrc}
+        source={figureOneSrc}
       />
       <BodyText>
         It’s unreasonable, however, to expect you to do this type of math in a case (and particularly in this application, where you’re urged to calculate mentally wherever possible). The important point to recognize is that the annual growth rate will be below 10%. For that reason, any answer below 10% and above 5% will be marked correct.

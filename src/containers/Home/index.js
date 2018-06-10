@@ -2,7 +2,6 @@ import React from 'react';
 import {
   AsyncStorage,
   ScrollView,
-  Image,
   Text,
   View,
 } from 'react-native';
@@ -10,7 +9,6 @@ import PropTypes from 'prop-types';
 import CasePanel from '../../components/CasePanel';
 import cases from '../../services/cases';
 import styles from './styles';
-import caseBaseIconImgSrc from '../../assets/images/icons/launcher/notebook_gray.png';
 
 class Home extends React.Component {
 
@@ -43,15 +41,9 @@ class Home extends React.Component {
       <View style={styles.homeContainer}>
         <ScrollView>
           <View style={styles.heading}>
-            <View style={styles.logoAndTitle}>
-              <Image
-                style={styles.caseBaseIcon}
-                source={caseBaseIconImgSrc}
-              />
-              <Text style={styles.title}>
-                casebase
-              </Text>
-            </View>
+            <Text style={styles.title}>
+              casebase
+            </Text>
             <Text style={[styles.subtitle, styles.subtitleLarge]}>
               {'A repository of case studies'}
             </Text>
