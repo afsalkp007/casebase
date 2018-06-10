@@ -26,8 +26,6 @@ const styles = {
   buttonRow: {
     display: 'flex',
     flexDirection: 'row',
-    borderTopWidth: 1,
-    borderColor: '#d6d7da',
     height: 65,
   },
 

@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Dimensions from 'Dimensions';
 import {
   View,
 } from 'react-native';
@@ -9,8 +8,6 @@ import ImageFrame from '../../../../ImageFrame';
 import PercentageSubsequent from '../../../../block-quotes/PercentageSubsequent';
 // w:1080 h:1080
 import imgSrc from '../assets/figureOne/index.png';
-
-const win = Dimensions.get('window');
 
 const Body = function Body() {
   return (
@@ -27,7 +24,7 @@ const Body = function Body() {
       <PercentageSubsequent />
       <ImageFrame
         source={imgSrc}
-        aspectRatio={1080/1080}
+        aspectRatio={1080 / 1080}
       />
     </View>
   );

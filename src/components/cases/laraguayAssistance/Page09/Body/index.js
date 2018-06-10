@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Dimensions from 'Dimensions';
 import {
   View,
 } from 'react-native';
@@ -10,8 +9,6 @@ import ImageFrame from '../../../../ImageFrame';
 import Fraction from '../../../../Fraction';
 // w:1080 h:1080
 import imgSrc from '../assets/figureOne/index.png';
-
-const win = Dimensions.get('window');
 
 const Body = function Body() {
   return (
@@ -30,9 +27,7 @@ const Body = function Body() {
       </BodyText>
       <ImageFrame
         source={imgSrc}
-        style={{
-          height: 9 * (win.width / 10),
-        }}
+        aspectRatio={1080 / 1080}
       />
       <BlockQuote>
         Interpret the graphic in the following way: on the first $4,000 in annual income, the government contributes 5% of that amount to the employee&apos;s retirement fund. The next $8,000 gets a 4% contribution, and so on. Assume, for this estimation, that $1,600 is not just the average monthly salary, but the monthly salary that all upkeep employees earn.

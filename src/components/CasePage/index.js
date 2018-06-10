@@ -92,8 +92,7 @@ const CasePage = function CasePage({
           (answer.type) ? (
             <InputRow {...inputProps} />
           ) : (
-            <View />
-            // <View style={styles.bottomBorder} />
+            <View style={styles.bottomBorder} />
           )
         }
         <View style={styles.buttonRow}>
