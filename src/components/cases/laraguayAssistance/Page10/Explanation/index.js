@@ -24,7 +24,7 @@ const Explanation = function Explanation() {
         $19,800 - $16,800 =  $3,000
       </MathText>
       <BodyText>
-        This would represent about 15\%% in savings relative to current annual expenditure on salaries and benefits:
+        This would represent about 15% in savings relative to current annual expenditure on salaries and benefits:
       </BodyText>
       <MathText>
         $3,000 / $19,800 ≈ 15%

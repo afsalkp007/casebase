@@ -4,14 +4,20 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
+import Overline from '../../../../Overline';
 import Header from '../../../../Header';
+import Divider from '../../../../Divider';
 
 const Body = function Body() {
   return (
     <View>
+      <Overline>
+        MCKINSEY &#62; PRACTICE CASE ONE
+      </Overline>
       <Header>
         Strengthening Disability Assistance in Laraquay
       </Header>
+      <Divider />
       <BodyText>
         Laraguay is a small country in central South America with a population of 6.8 million. The government of Laraguay would like to improve its nascent youth disability assistance program. This national program resembles the so-called special needs programs in the United States, though reduced in quality and scope.
       </BodyText>

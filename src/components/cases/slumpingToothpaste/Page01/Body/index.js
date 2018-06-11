@@ -4,18 +4,20 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
-import Header from '../../../../Header';
 import Overline from '../../../../Overline';
+import Header from '../../../../Header';
+import Divider from '../../../../Divider';
 
 const Body = function Body() {
   return (
     <View>
       <Overline>
-        BCG ≫ SAMPLE CASE ONE
+        BCG &#62; PRACTICE CASE ONE
       </Overline>
       <Header>
           Slumping Toothpaste Sales
       </Header>
+      <Divider />
       <BodyText>
           Schuster & Wager (S&W) is one of the largest producers of consumer goods in the United States. For years, sales of consumer goods grew at the same pace as the overall economy. Recently, however, that relationship has broken down. Sales of consumer staples are flat, even as annual GDP growth averaged 2% over the past three years.
       </BodyText>

@@ -4,14 +4,20 @@ import {
   View,
 } from 'react-native';
 import BodyText from '../../../../BodyText';
+import Overline from '../../../../Overline';
 import Header from '../../../../Header';
+import Divider from '../../../../Divider';
 
 const Body = function Body() {
   return (
     <View>
+      <Overline>
+        BCG &#62; PRACTICE CASE TWO
+      </Overline>
       <Header>
           Broadband in Basra
       </Header>
+      <Divider />
       <BodyText>
           Al-Asham Technologies (AAT) is an early stage tech startup in Basra, southeastern Iraq’s largest city. While the company is officially incorporated, at this point it exists only on paper.
       </BodyText>
