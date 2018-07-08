@@ -5,4 +5,4 @@ export default {
   sansSerifLight: 'LibreFranklin-Light',
   sansSerifRegular: 'LibreFranklin-Regular',
   sansSerifBold: 'LibreFranklin-Bold',
-}
+};

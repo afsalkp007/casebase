@@ -4,7 +4,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 
-const BoldText = function BoldText({ children }) {
+const ItalicText = function ItalicText({ children }) {
   return (
     <Text style={{ fontStyle: 'italic' }} >
       { children }
@@ -16,7 +16,7 @@ const propTypes = {
   children: PropTypes.string.isRequired,
 };
 
-BoldText.propTypes = propTypes;
+ItalicText.propTypes = propTypes;
 
-export default BoldText;
+export default ItalicText;
 

@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-ios": "react-native run-ios",
     "clear": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
+    "link": "react-native link",
     "lint": "esw -w src/",
     "test": "jest"
   },
