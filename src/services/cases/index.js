@@ -2,11 +2,13 @@ import broadbandInBasra from '../../components/cases/broadbandInBasra';
 import laraguayAssistance from '../../components/cases/laraguayAssistance';
 import slumpingToothpaste from '../../components/cases/slumpingToothpaste';
 import aromaFlip from '../../components/cases/aromaFlip';
+import publishingHouseProfits from '../../components/cases/publishingHouseProfits';
 
 /* Company Thumbnail Images */
 import bcgImgSrc from '../../assets/images/company-logos/bcg/bcg-logo.png';
 import mckImgSrc from '../../assets/images/company-logos/mck/mck-logo.png';
 import bainImgSrc from '../../assets/images/company-logos/bain/bain-logo.png';
+import deloitteImgSrc from '../../assets/images/company-logos/deloitte/deloitte-logo.png';
 
 
 export default [
@@ -41,5 +43,13 @@ export default [
     blurb: 'Arabel Flavors & Fragrances has seen declining profits over the past decade. Help determine if there’s a roadmap to profitability.',
     thumbnail: bainImgSrc,
     pages: aromaFlip,
+  },
+  {
+    name: 'Publishing House Profits',
+    sku: 'publishing_house_profits',
+    company: 'Deloitte',
+    blurb: 'The growth of the internet has pressured traditional book publishers. Help Marvin Press develop a plan for growth in the new landscape.',
+    thumbnail: deloitteImgSrc,
+    pages: publishingHouseProfits,
   },
 ];
