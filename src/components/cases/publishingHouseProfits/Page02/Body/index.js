@@ -7,6 +7,7 @@ import BodyText from '../../../../BodyText';
 import FreeResponseInitial from '../../../../block-quotes/FreeResponseInitial';
 // 583×594
 import imgSrc from '../assets/figureOne/publishing_1.png';
+import img2Src from '../assets/figureTwo/publishing__3.png';
 import ImageFrame from '../../../../ImageFrame';
 
 const Body = function Body() {
@@ -17,6 +18,10 @@ const Body = function Body() {
       </BodyText>
       <ImageFrame
         source={imgSrc}
+        aspectRatio={583 / 594}
+      />
+      <ImageFrame
+        source={img2Src}
         aspectRatio={583 / 594}
       />
       <BodyText>
