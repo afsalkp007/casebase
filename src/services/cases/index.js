@@ -3,12 +3,14 @@ import laraguayAssistance from '../../components/cases/laraguayAssistance';
 import slumpingToothpaste from '../../components/cases/slumpingToothpaste';
 import aromaFlip from '../../components/cases/aromaFlip';
 import publishingHouseProfits from '../../components/cases/publishingHouseProfits';
+import sportOfKings from '../../components/cases/sportOfKings';
 
 /* Company Thumbnail Images */
 import bcgImgSrc from '../../assets/images/company-logos/bcg/bcg-logo.png';
 import mckImgSrc from '../../assets/images/company-logos/mck/mck-logo.png';
 import bainImgSrc from '../../assets/images/company-logos/bain/bain-logo.png';
 import deloitteImgSrc from '../../assets/images/company-logos/deloitte/deloitte-logo.png';
+import accentureImgSrc from '../../assets/images/company-logos/accenture/accenture-logo.png';
 
 
 export default [
@@ -51,5 +53,13 @@ export default [
     blurb: 'The growth of the internet has pressured traditional book publishers. Help Marvin Press develop a plan for growth in the new landscape.',
     thumbnail: deloitteImgSrc,
     pages: publishingHouseProfits,
+  },
+  {
+    name: 'The Sport of Kings',
+    sku: 'sport_of_kings',
+    company: 'Accenture',
+    blurb: 'A storied Kentucky race horse farm considers licensing its name and image to a supplements manufacturer to boost revenue.',
+    thumbnail: accentureImgSrc,
+    pages: sportOfKings,
   },
 ];
