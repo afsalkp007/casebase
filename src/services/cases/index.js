@@ -4,6 +4,7 @@ import slumpingToothpaste from '../../components/cases/slumpingToothpaste';
 import aromaFlip from '../../components/cases/aromaFlip';
 import publishingHouseProfits from '../../components/cases/publishingHouseProfits';
 import sportOfKings from '../../components/cases/sportOfKings';
+import healthCareInCountry from '../../components/cases/healthCareInCountry';
 
 /* Company Thumbnail Images */
 import bcgImgSrc from '../../assets/images/company-logos/bcg/bcg-logo.png';
@@ -53,6 +54,14 @@ export default [
     blurb: 'The growth of the internet has pressured traditional book publishers. Help Marvin Press develop a plan for growth in the new landscape.',
     thumbnail: deloitteImgSrc,
     pages: publishingHouseProfits,
+  },
+  {
+    name: 'Expanding Health Care Access',
+    sku: 'health_care_in_country',
+    company: 'McKinsey & Company',
+    blurb: 'The government of Thailand wants to extend its network of health care centers while containing costs. See if that\'s possible.',
+    thumbnail: mckImgSrc,
+    pages: healthCareInCountry,
   },
   {
     name: 'The Sport of Kings',
