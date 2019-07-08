@@ -24,14 +24,6 @@ export default [
     pages: slumpingToothpaste,
   },
   {
-    name: 'Broadband in Basra',
-    sku: 'broadband_case_purchase',
-    company: 'Boston Consulting Group',
-    blurb: 'Investors are hoping to build a major broadband internet provider in Basra, Iraq. Help assess the viability of the business plan.',
-    thumbnail: bcgImgSrc,
-    pages: broadbandInBasra,
-  },
-  {
     name: 'Disability Assistance Reform',
     sku: 'laraguay_case_purchase',
     company: 'McKinsey & Company',
@@ -46,6 +38,14 @@ export default [
     blurb: 'Arabel Flavors & Fragrances has seen declining profits over the past decade. Help determine if there’s a roadmap to profitability.',
     thumbnail: bainImgSrc,
     pages: aromaFlip,
+  },
+  {
+    name: 'Broadband in Basra',
+    sku: 'broadband_case_purchase',
+    company: 'Boston Consulting Group',
+    blurb: 'Investors are hoping to build a major broadband internet provider in Basra, Iraq. Help assess the viability of the business plan.',
+    thumbnail: bcgImgSrc,
+    pages: broadbandInBasra,
   },
   {
     name: 'Publishing House Profits',
